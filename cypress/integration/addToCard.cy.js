@@ -31,4 +31,15 @@ describe('empty spec', () => {
     createAccount.clickContinueButtonInGenderCard()
     createAccount.clickGetStart();
   })
+  it.only('[TC002] add to card with logged in user', () => {
+    homePage.visitHomePage();
+    homePage.NavigateToIdentificationPage();
+    identification.typeValidEmail(customerUserInfo.email);
+    identification.clickContinueButton()
+    createAccount.typeValidPassword(customerUserInfo.password)
+    identification.clickContinueButton()
+    homePage.hoverOverSuperMarket()
+    homePage.selectBakerySubCategory()
+    bakery.addToCardProductNumber(1)
+  })
 })
