@@ -1,0 +1,19 @@
+{
+  "name": "jumia",
+  "version": "1.0.0",
+  "description": "cypress task",
+  "main": "index.js",
+  "scripts": {
+    "cy_open": "npx cypress open",
+    "cypress_headless": "cypress run"
+
+  },
+  "keywords": [
+    "cypres"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.11.0"
+  }
+}
