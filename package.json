@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cy_open": "npx cypress open",
-    "cypress_headless": "cypress run"
-
+    "cy_headless": "cypress run"
   },
   "keywords": [
     "cypres"
@@ -15,5 +14,9 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^10.11.0"
+  },
+  "dependencies": {
+    "cypress-real-events": "^1.8.1",
+    "jquery": "^3.7.0"
   }
 }

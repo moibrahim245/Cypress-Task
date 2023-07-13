@@ -158,7 +158,7 @@ class Actions {
     }
   
     scrollToBottom(element, timeoutPeriod) {
-      element.scrollTo('bottom', {timeout: timeoutPeriod});
+      element.scrollTo('top', {timeout: timeoutPeriod});
     }
   
     scrollToRight(element, timeoutPeriod) {
@@ -183,7 +183,7 @@ class Actions {
     }
   
     hoverOnElement(element) {
-      element.realHover({position: 'center'});
+      element.realHover();
     }
     /**
      *When display logic is controlled via CSS
@@ -238,6 +238,9 @@ class Actions {
       [...Array(n).keys()].forEach((index) => {
         element.eq(index).check();
       });
+    }
+    check(element){
+      element.check();
     }
   }
   
