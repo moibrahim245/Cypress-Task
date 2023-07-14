@@ -23,11 +23,6 @@ module.exports = defineConfig({
         specPattern: './cypress/integration/**/*.cy.{js,jsx,ts,tsx}',
         experimentalSessionAndOrigin: true
     },
-    reporter: 'junit',
-    reporterOptions: {
-        mochaFile: 'cypress/results/results-[hash].xml',
-        toConsole: true
-    },
     env: {
         localApiUrl: 'http://localhost:3000'
     }
