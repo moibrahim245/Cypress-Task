@@ -31,39 +31,8 @@ class HomePage{
 		actions.click(this.accountDropdownMenu());
 		actions.click(this.singInButton());
 	}
-	hoverOverSuperMarket(){
-		// if (window.Cypress) {
-		//     $(window).scroll(() => {
-		//       $(window).scrollTop(0);
-		//     });
-		//   }
-		//         cy.get('[href="/groceries/"] span')
-		//         .scrollIntoView(false).then($el => {
-		//     // The previous reference to the element may be detached from the DOM at this point
-		//     // Re-query the element to ensure it is still attached to the DOM
-		//     cy.get('[href="/groceries/"]')
-		//       .trigger('mouseover')
-		//   })
-		// cy.wait(5000)
-		//   cy.get('div.row').within(()=>{
+	hoverOverSuperMarket(){	
 		this.superMarketCategory().realHover();
-		//   })
-		// cy.scrollIntoView('[href="/groceries/"] span')
-		// .get('[href="/groceries/"] span')
-		// .scrollIntoView()
-		// .get('[href="/groceries/"] span')
-		// .trigger('mouseover')
-		// this.superMarketCategory()
-		// .scrollIntoView({duration: 0}).trigger('mouseover')
-        
-		// actions.scrollToBottom(this.superMarketCategory());
-		// actions.hoverOnElementUsingMouseEnter(this.superMarketCategory())
-		// this.superMarketCategory().realHover()
-		// .then((el) => {
-		//   el.trigger('mouseover');
-		// });
-
-
 	}
 	selectBakerySubCategory(){
 		actions.click(this.bakerySubCategory());
