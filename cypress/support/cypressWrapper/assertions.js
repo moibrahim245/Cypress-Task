@@ -18,6 +18,15 @@ class Assertions {
     assertPageLoad(url) {
         cy.url().should('eq', url);
       }
+       /**
+     * Assert url loaded
+     * @param element 
+     * @param {string} attr Attribute name
+     * @param {string} value Value of the attribute
+     */
+      assertAttrValue(element, attr, value){
+      element.invoke('attr', attr).should('equal', value);
+      }
   }
   
   export const assertions = new Assertions();

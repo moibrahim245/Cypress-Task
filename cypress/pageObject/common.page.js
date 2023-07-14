@@ -6,6 +6,9 @@ class Common{
 cartIcon(){
     return cy.get('[href="/cart/"]')
 }
+productNumberInCartIcon(){
+    return cy.get('#ci')
+}
 successfulMessageForAddingProduct(){
     return cy.get('div._success')
 }
@@ -22,6 +25,7 @@ verifyProductIsAddedToCart(cartCount){
         expect(req.response.body.cart.count).to.eq(cartCount) 
     })
     assertions.assertElementHasText(this.successfulMessageForAddingProduct(), 'Product added successfully')
+    assertions.assertAttrValue(this.productNumberInCartIcon(),'data-bbl', `${cartCount}`)
 }
 }
 export const common = new Common();
