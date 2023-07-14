@@ -1,33 +1,33 @@
 
 
 class Assertions {
-  /**
+	/**
      * Assert element has text
      * @param element
      * @param {string} txt
      *
      * @param {Cypress.Chainable<undefined>|JQuery<HTMLElement>} $element
      */
-    assertElementHasText(element, txt) {
-      element.should('contain', txt, {matchCase: false});
-    }
- /**
+	assertElementHasText(element, txt) {
+		element.should('contain', txt, {matchCase: false});
+	}
+	/**
      * Assert url loaded
      * @param url
      */
-    assertPageLoad(url) {
-        cy.url().should('eq', url);
-      }
-       /**
+	assertPageLoad(url) {
+		cy.url().should('eq', url);
+	}
+	/**
      * Assert url loaded
      * @param element 
      * @param {string} attr Attribute name
      * @param {string} value Value of the attribute
      */
-      assertAttrValue(element, attr, value){
-      element.invoke('attr', attr).should('equal', value);
-      }
-  }
+	assertAttrValue(element, attr, value){
+		element.invoke('attr', attr).should('equal', value);
+	}
+}
   
-  export const assertions = new Assertions();
+export const assertions = new Assertions();
   
