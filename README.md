@@ -51,5 +51,5 @@ The tests in this repository follow best practice coding standards for maintaina
 
 ## Conclusion
 
-These automated tests demonstrate how to use Cypress and best practice coding standards to test the Jumia e-commerce website. By following the README instructions and running the tests, you can ensure that the website is working as expected and catch any issues before they affect your users.
+These automated tests demonstrate how to use Cypress and best practice coding standards to test the Jumia e-commerce website.
 ```
